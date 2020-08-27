@@ -1,0 +1,68 @@
+{
+	"data": [{
+			"what": "Lasse Stefanz",
+			"where": {
+				"venue": "Kjell Härnqvistsalen",
+				"adress": "Göteborgs universitet, Pedagogen - Hus A"
+			},
+			"when": {
+				"date": "21 mar",
+				"from": "19:00",
+				"to": "21:00"
+			},
+			"info": "Section C - seat 233, bring umbrella",
+			"ticketID": "A2ED7",
+			"price" : 299
+
+		},
+		{
+			"what": "Pelle Trubadur",
+			"where": {
+				"venue": "Pubelipuben",
+				"adress": "Lindholmen Science Park"
+			},
+			"when": {
+				"date": "29 mar",
+				"from": "22:00",
+				"to": "00:00"
+			},
+			"info": "No info",
+			"ticketID": "GD44S",
+			"price" : 100
+		},
+		{
+			"what": "Kajsas kör",
+			"where": {
+				"venue": "Götaplatsen",
+				"adress": "Längst upp på avenyn änna"
+			},
+			"when": {
+				"date": "10 apr",
+				"from": "15:00",
+				"to": "16:00"
+			},
+			"info": "ståplats",
+			"ticketID": "ASDAS",
+			"price" : 0
+
+		},
+		{
+			"what": "Klubb Untz",
+			"where": {
+				"venue": "Din favoritkällare",
+				"adress": "Lagom långt bort"
+			},
+			"when": {
+				"date": "17 apr",
+				"from": "22:00",
+				"to": "-"
+			},
+			"info": "dansgolvet",
+			"ticketID": "A2ASD",
+			"price" : 100
+
+		}
+	],
+	"tickets": [ 
+	]
+}
