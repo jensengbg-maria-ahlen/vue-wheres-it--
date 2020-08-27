@@ -25,7 +25,7 @@ export default {
             this.events = data;
         },
         addTicket() {
-            this.$parent.tickets.push(JSON.stringify(this.eventdata));
+            this.$parent.tickets.push(this.ticket);
             console.log(JSON.stringify(this.eventData));
         }
     }
