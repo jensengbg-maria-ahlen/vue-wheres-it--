@@ -1,5 +1,4 @@
 <template>
-<section>
         <li>
             <h5 v-on:click="addTicket">{{eventData.when.date}}</h5>
             <section>
@@ -9,7 +8,6 @@
             </section>
             <h6 v-on:click="addTicket">{{eventData.price + ' sek'}}</h6>
         </li>
-</section>
 </template>
 
 <script>
@@ -25,7 +23,7 @@ export default {
             this.events = data;
         },
         addTicket() {
-            this.$parent.tickets.push(this.ticket);
+            this.$parent.events.push(this.tickets);
             console.log(JSON.stringify(this.eventData));
         }
     }
@@ -40,13 +38,9 @@ export default {
         display: flex;
         align-items: center;
         color: white;
-
-        section {
-            display: flex;
-            flex-direction: column;
-            margin-right: 1rem;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-        }
+        display: flex;
+        margin-right: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 
 
         h5 {
@@ -64,7 +58,6 @@ export default {
             text-align: center;
             margin: 1rem;
         }
-
 
         h4 {
             width: 202px;

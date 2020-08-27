@@ -1,5 +1,4 @@
 <template>
-<section>
     <li class="ticketinfo">
         <div>
             <p>WHAT</p>
@@ -31,7 +30,6 @@
             <p>{{ticketData.ticketID}}</p>
         </div>
     </li>
-</section>
 </template>
 
 <script>
