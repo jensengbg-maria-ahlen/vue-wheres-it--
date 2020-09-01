@@ -43,7 +43,7 @@
 			},
 			"info": "ståplats",
 			"ticketID": "ASDAS",
-			"price" : 0
+			"price" : 50
 
 		},
 		{
@@ -55,7 +55,7 @@
 			"when": {
 				"date": "17 apr",
 				"from": "22:00",
-				"to": "-"
+				"to": "04:00"
 			},
 			"info": "dansgolvet",
 			"ticketID": "A2ASD",

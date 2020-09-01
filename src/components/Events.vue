@@ -1,12 +1,12 @@
 <template>
-        <li>
-            <h5 v-on:click="addTicket">{{eventData.when.date}}</h5>
+        <li v-on:click="addTicket(eventData)">
+            <h5>{{eventData.when.date}}</h5>
             <section>
-                <h4 v-on:click="addTicket">{{eventData.what}}</h4>
-                <h3 v-on:click="addTicket">{{eventData.where.venue}}</h3>
-                <h2 v-on:click="addTicket">{{eventData.when.from + ' - ' + eventData.when.to}}</h2>
+                <h4>{{eventData.what}}</h4>
+                <h3>{{eventData.where.venue}}</h3>
+                <h2>{{eventData.when.from + ' - ' + eventData.when.to}}</h2>
             </section>
-            <h6 v-on:click="addTicket">{{eventData.price + ' sek'}}</h6>
+            <h6>{{eventData.price + ' sek'}}</h6>
         </li>
 </template>
 
@@ -16,15 +16,29 @@ export default {
     props: {
         eventData: Object
     },
+    data() {
+        return {
+            events: [ {
+			what: "",
+			where: {
+				venue: "",
+				adress: ""
+			},
+			when: {
+				date: "",
+				from: "",
+				to: ""
+			},
+			info: "",
+			ticketID: "",
+			price : ""
+		}]
+        }
+    },
     methods: {
-        async getEvents() {
-            const response = await fetch("events.json");
-            const data = await response.json();
-            this.events = data;
-        },
-        addTicket() {
-            this.$parent.events.push(this.tickets);
-            console.log(JSON.stringify(this.eventData));
+        addTicket(ticket) {
+            this.$parent.tickets.push(ticket);
+            console.log(ticket);
         }
     }
 

@@ -1,6 +1,6 @@
 <template> 
   <main id="app">
-    <section>
+    <section >
       <h1>Events</h1>
       <ul>
         <all-events 
@@ -11,7 +11,7 @@
       </ul>
     </section>
     
-    <section>
+    <section id="tickets">
       <h1>Tickets</h1>
       <ul>
         <all-tickets 
@@ -55,15 +55,15 @@ export default {
   }
 
   body {
-    height: 100vh;
+    height: 1000vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background-color: #231F42;
 
     #app {
-      width: 100vw;
-      min-height: 800px;
+      width: 200vw;
+      min-width: 1000px;
       display: flex;
       justify-content: center;
 
@@ -74,6 +74,11 @@ export default {
         font-weight: bold;
         font-size: 32px;
         line-height: 37px;
+      }
+
+      #tickets {
+        display: flex;
+        flex-direction: column;
       }
     }
   }
